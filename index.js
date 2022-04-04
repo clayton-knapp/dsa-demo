@@ -40,3 +40,22 @@ console.log('num2EvenOrOdd', num2EvenOrOdd);
 console.log('num2EvenOrOdd', num2EvenOrOdd);
 
 
+
+
+
+
+const sampleArray = ["a", "b", "c", "d", "e"];
+
+function at(arr, index) {
+  if (index >= 0) {
+    return arr[index];
+  } else {
+    const length = arr.length;
+    const newIndex = length + index;
+    return arr[newIndex];
+  }
+}
+
+console.log("at 1", at(sampleArray, 1));
+console.log("at 0", at(sampleArray, 0));
+console.log("at -1", at(sampleArray, -1));
