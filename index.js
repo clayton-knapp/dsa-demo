@@ -45,8 +45,8 @@ const number2 = 41;
 const num1EvenOrOdd = oddishOrEvenish(number1);
 const num2EvenOrOdd = oddishOrEvenish(number2);
 
-console.log('num1EvenOrOdd', num1EvenOrOdd);
-console.log('num2EvenOrOdd', num2EvenOrOdd);
+// console.log('num1EvenOrOdd', num1EvenOrOdd);
+// console.log('num2EvenOrOdd', num2EvenOrOdd);
 
 
 
@@ -65,6 +65,44 @@ function at(arr, index) {
   }
 }
 
-console.log('at 1', at(sampleArray, 1));
-console.log('at 0', at(sampleArray, 0));
-console.log('at -1', at(sampleArray, -1));
+// console.log('at 1', at(sampleArray, 1));
+// console.log('at 0', at(sampleArray, 0));
+// console.log('at -1', at(sampleArray, -1));
+
+
+
+
+
+//FizzBuzz
+
+// return array numbers 1 to n
+// map through the array for each number test if its divisible by 3, 5, or both
+// depending return number or Fizz, Buzz, FizzBuzz
+
+
+
+function fizzBuzz(number) {
+  const arr = Array(number).fill(1);
+  console.log('arr', arr);
+  const newArr = arr.map((element, index) => {
+    const indexAdj = index + 1;
+    if (indexAdj % 3 === 0 && indexAdj % 5 === 0) {
+      return 'FizzBuzz';
+    }
+    else if(indexAdj % 3 === 0) {
+      return 'Fizz';
+    }
+    else if(indexAdj % 5 === 0) {
+      return 'Buzz';
+    }
+    else {
+      return indexAdj;
+    }
+  });
+
+  console.log('newArr', newArr);
+
+}
+
+const array = fizzBuzz(16);
+console.log('array', array);
