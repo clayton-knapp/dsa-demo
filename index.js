@@ -83,7 +83,7 @@ function at(arr, index) {
 
 function fizzBuzz(number) {
   const arr = Array(number).fill(1);
-  console.log('arr', arr);
+  // console.log('arr', arr);
   const newArr = arr.map((element, index) => {
     const indexAdj = index + 1;
     if (indexAdj % 3 === 0 && indexAdj % 5 === 0) {
@@ -100,9 +100,44 @@ function fizzBuzz(number) {
     }
   });
 
-  console.log('newArr', newArr);
+  // console.log('newArr', newArr);
 
 }
 
 const array = fizzBuzz(16);
-console.log('array', array);
+// console.log('array', array);
+
+
+
+function anagram(firstWord, secondWord) {
+  const firstArr = firstWord.split("").sort().join();
+  const secondArr = secondWord.split("").sort().join();
+  return firstArr === secondArr;
+}
+
+// console.log("superintended", "unpredestined", anagram(input1, input2));
+// console.log("pictorialness", "documentarily", anagram(input3, input4));
+
+
+
+
+const uniqueInput1 = ['Aa', 'aaa', 'aaaaa', 'BbBb', 'Aaaa', 'AaAaAa', 'a'];
+const uniqueInput2 = ['abc', 'acb', 'bac', 'foo', 'bca', 'cab', 'cba'];
+
+
+function uniqueString(strings) {
+  const arr = strings.map((string) => {
+    return string.split('')
+      .sort()
+      .map((eachLetter) => eachLetter.toLowerCase())
+      .join('');
+  });
+
+  const set = new Set(arr);
+
+
+  return [...set];
+}
+
+console.log(uniqueString(uniqueInput1));
+
