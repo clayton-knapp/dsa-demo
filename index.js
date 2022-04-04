@@ -31,20 +31,29 @@ function oddishOrEvenish(number) {
   return x % 2 === 0 ? 'Evenish' : 'Oddish';
 }
 
+
+// Dan's way
+//const sumOfDigits = number
+// .toString()
+// .split('');
+// .map((digit) => Number(digit))
+// .reduce((sum, n) => sum +n)
+// return sumOfDigits % 2 ? 'Oddish' : 'Evenish';
+
 const number1 = 121;
 const number2 = 41;
 const num1EvenOrOdd = oddishOrEvenish(number1);
 const num2EvenOrOdd = oddishOrEvenish(number2);
 
+console.log('num1EvenOrOdd', num1EvenOrOdd);
 console.log('num2EvenOrOdd', num2EvenOrOdd);
-console.log('num2EvenOrOdd', num2EvenOrOdd);
 
 
 
 
 
 
-const sampleArray = ["a", "b", "c", "d", "e"];
+const sampleArray = ['a', 'b', 'c', 'd', 'e'];
 
 function at(arr, index) {
   if (index >= 0) {
@@ -56,6 +65,6 @@ function at(arr, index) {
   }
 }
 
-console.log("at 1", at(sampleArray, 1));
-console.log("at 0", at(sampleArray, 0));
-console.log("at -1", at(sampleArray, -1));
+console.log('at 1', at(sampleArray, 1));
+console.log('at 0', at(sampleArray, 0));
+console.log('at -1', at(sampleArray, -1));
