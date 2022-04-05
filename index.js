@@ -11,7 +11,7 @@ function reverseLettersOfString(sentence) {
 }
 
 const reversedSentence = reverseLettersOfString(exampleSentence);
-// console.log(reversedSentence);
+console.log(reversedSentence);
 
 
 //note reverse only works on arrays not string
@@ -45,8 +45,8 @@ const number2 = 41;
 const num1EvenOrOdd = oddishOrEvenish(number1);
 const num2EvenOrOdd = oddishOrEvenish(number2);
 
-// console.log('num1EvenOrOdd', num1EvenOrOdd);
-// console.log('num2EvenOrOdd', num2EvenOrOdd);
+console.log('num1EvenOrOdd', num1EvenOrOdd);
+console.log('num2EvenOrOdd', num2EvenOrOdd);
 
 
 
@@ -65,9 +65,9 @@ function at(arr, index) {
   }
 }
 
-// console.log('at 1', at(sampleArray, 1));
-// console.log('at 0', at(sampleArray, 0));
-// console.log('at -1', at(sampleArray, -1));
+console.log('at 1', at(sampleArray, 1));
+console.log('at 0', at(sampleArray, 0));
+console.log('at -1', at(sampleArray, -1));
 
 
 
@@ -100,23 +100,23 @@ function fizzBuzz(number) {
     }
   });
 
-  // console.log('newArr', newArr);
+  console.log('newArr', newArr);
 
 }
 
 const array = fizzBuzz(16);
-// console.log('array', array);
+console.log('array', array);
 
 
 
 function anagram(firstWord, secondWord) {
-  const firstArr = firstWord.split("").sort().join();
-  const secondArr = secondWord.split("").sort().join();
+  const firstArr = firstWord.split('').sort().join();
+  const secondArr = secondWord.split('').sort().join();
   return firstArr === secondArr;
 }
 
-// console.log("superintended", "unpredestined", anagram(input1, input2));
-// console.log("pictorialness", "documentarily", anagram(input3, input4));
+console.log('superintended', 'unpredestined', anagram('superintended', 'unpredestined'));
+console.log('pictorialness', 'documentarily', anagram('pictorialness', 'documentarily'));
 
 
 
@@ -140,4 +140,4 @@ function uniqueString(strings) {
 }
 
 console.log(uniqueString(uniqueInput1));
-
+console.log(uniqueString(uniqueInput2));
